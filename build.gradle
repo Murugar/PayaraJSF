@@ -1,0 +1,16 @@
+apply plugin: 'war'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile 'fish.payara.extras:payara-micro:4.1.1.163'
+}
+
+war.baseName = 'PayaraJSF'
